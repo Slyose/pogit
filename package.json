@@ -1,0 +1,26 @@
+{
+  "name": "pogit",
+  "version": "1.0.0",
+  "description": "Created to make using git with two accounts on the same mac much easier",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "bin": {
+    "pogit": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-slyose:slyose/pogit.git"
+  },
+  "keywords": [
+    "github",
+    "ssh",
+    "gitconfig"
+  ],
+  "author": "slyose",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.6"
+  }
+}
