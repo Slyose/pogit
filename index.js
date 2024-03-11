@@ -65,7 +65,6 @@ async function emailSetup(chosenHost) {
 }
 
 function clone() {
-  let chosenUsername = "";
   let chosenHost = "";
 
   readFile(`${os.homedir()}/.ssh/config`)
@@ -99,7 +98,6 @@ function clone() {
           if (!(chosenHost in pogitConfigData)) {
             await emailSetup(chosenHost);
           }
-          chosenUsername = usernames[answers.selectedHost];
           const cloneCommand = `git clone git@${chosenHost}:${repoUrl}.git ${localRepoName}`;
           return cloneCommand;
         })
